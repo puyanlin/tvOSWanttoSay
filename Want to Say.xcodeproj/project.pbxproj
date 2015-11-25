@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0292861C06167400CA0CC7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0292851C06167400CA0CC7 /* TableViewController.swift */; };
 		3D9405071C05FD1A00A9F991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9405061C05FD1A00A9F991 /* AppDelegate.swift */; };
 		3D9405091C05FD1A00A9F991 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9405081C05FD1A00A9F991 /* ViewController.swift */; };
 		3D94050C1C05FD1A00A9F991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D94050A1C05FD1A00A9F991 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D0292851C06167400CA0CC7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = "../../../../puyan/Desktop/tvOSWanttoSay/Want to Say/TableViewController.swift"; sourceTree = "<group>"; };
 		3D9405031C05FD1A00A9F991 /* Want to Say.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Want to Say.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9405061C05FD1A00A9F991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D9405081C05FD1A00A9F991 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				3D9405061C05FD1A00A9F991 /* AppDelegate.swift */,
 				3D9405081C05FD1A00A9F991 /* ViewController.swift */,
+				3D0292851C06167400CA0CC7 /* TableViewController.swift */,
 				3D94050A1C05FD1A00A9F991 /* Main.storyboard */,
 				3D94050D1C05FD1A00A9F991 /* Assets.xcassets */,
 				3D94050F1C05FD1A00A9F991 /* Info.plist */,
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D9405091C05FD1A00A9F991 /* ViewController.swift in Sources */,
+				3D0292861C06167400CA0CC7 /* TableViewController.swift in Sources */,
 				3D9405071C05FD1A00A9F991 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,6 +479,7 @@
 				3D94052A1C05FD1A00A9F991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D94052B1C05FD1A00A9F991 /* Build configuration list for PBXNativeTarget "Want to SayTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +488,7 @@
 				3D94052D1C05FD1A00A9F991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D94052E1C05FD1A00A9F991 /* Build configuration list for PBXNativeTarget "Want to SayUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +497,7 @@
 				3D9405301C05FD1A00A9F991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

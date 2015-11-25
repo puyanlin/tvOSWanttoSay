@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="eP1-sT-t5n">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
@@ -15,12 +15,87 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hb" translatesAutoresizingMaskIntoConstraints="NO" id="J4u-sT-Evd">
+                                <rect key="frame" x="676" y="394" width="568" height="291"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="IQJ-kf-cpo"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Snf-6C-FAk"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6t-hM-KW3">
+                                <rect key="frame" x="1655" y="497" width="140" height="86"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="ehJ-LU-vSs"/>
+                                    <constraint firstAttribute="height" constant="86" id="gWg-iY-mjt"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="來"/>
+                                <connections>
+                                    <segue destination="aBi-ty-z8Y" kind="show" id="x0Q-48-chE"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="J4u-sT-Evd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HU0-IF-9Kb"/>
+                            <constraint firstAttribute="trailing" secondItem="a6t-hM-KW3" secondAttribute="trailing" constant="125" id="LgG-7g-vtL"/>
+                            <constraint firstItem="J4u-sT-Evd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="k6R-fJ-Qg8"/>
+                            <constraint firstItem="a6t-hM-KW3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kxo-wC-jzb"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="zqe-QC-C3q"/>
+                    <connections>
+                        <outlet property="btnMore" destination="a6t-hM-KW3" id="xI8-Qj-GpQ"/>
+                        <outlet property="imgTitle" destination="J4u-sT-Evd" id="zh8-vZ-5Lp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="167" y="403"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="d5Z-f8-BH2">
+            <objects>
+                <tableViewController storyboardIdentifier="TableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aBi-ty-z8Y" customClass="TableViewController" customModule="Want_to_Say" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" id="bmA-mn-htU">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <connections>
+                            <outlet property="dataSource" destination="aBi-ty-z8Y" id="6WA-Jt-cpi"/>
+                            <outlet property="delegate" destination="aBi-ty-z8Y" id="d7E-7D-FeJ"/>
+                        </connections>
+                    </tableView>
+                    <nil key="simulatedTopBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bOt-Zt-llh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2414" y="403"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pcc-9R-qYN">
+            <objects>
+                <navigationController id="eP1-sT-t5n" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="24S-qh-SnN">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="74b-Dm-5aG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0si-pr-YII" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1952" y="403"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hb" width="568" height="291"/>
+    </resources>
 </document>
