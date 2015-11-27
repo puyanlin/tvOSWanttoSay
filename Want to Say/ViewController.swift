@@ -7,15 +7,22 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
     @IBOutlet var imgTitle: UIImageView!
     @IBOutlet var btnMore: UIButton!
-    
+    var ding:AVAudioPlayer = AVAudioPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.navigationController?.navigationBarHidden = true
+        
+        let path = NSBundle.mainBundle().pathForResource("hbd", ofType: "m4a")
+        print(path)
+        try! ding = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path!), fileTypeHint: nil)
+        ding.prepareToPlay()
+        ding.play()
+        
         btnMore.alpha = 0
         
     }
