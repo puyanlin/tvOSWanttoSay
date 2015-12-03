@@ -108,13 +108,13 @@
 				3D9405061C05FD1A00A9F991 /* AppDelegate.swift */,
 				3D9405081C05FD1A00A9F991 /* SongViewController.swift */,
 				3D0292851C06167400CA0CC7 /* CardTableViewController.swift */,
+				3D4C66361C108CC1005A03A5 /* CardContentTableViewController.swift */,
 				3D94050A1C05FD1A00A9F991 /* Main.storyboard */,
 				3D94050D1C05FD1A00A9F991 /* Assets.xcassets */,
 				3D57E16F1C0716A400142C80 /* hbd.m4a */,
 				3D94050F1C05FD1A00A9F991 /* Info.plist */,
 				3D4C66321C10895A005A03A5 /* CardContentCell.swift */,
 				3D4C66331C10895A005A03A5 /* CardContentCell.xib */,
-				3D4C66361C108CC1005A03A5 /* CardContentTableViewController.swift */,
 			);
 			path = "Want to Say";
 			sourceTree = "<group>";

@@ -38,16 +38,27 @@ class CardContentTableViewController: UITableViewController {
         return 1
     }
     
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return toText
+    }
+    
+    override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return "按menu回上一層！"
+    }
+    
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        //return 300
         return CardContentCell.rowHeight(content: content, screenWidth: self.tableView.bounds.height)
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:CardContentCell = tableView.dequeueReusableCellWithIdentifier("CardContentCell", forIndexPath: indexPath) as! CardContentCell
         cell.tvContent.text = content
+        
 
         return cell
     }
+    
     
 
     /*

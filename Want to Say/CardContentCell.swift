@@ -27,6 +27,8 @@ class CardContentCell: UITableViewCell {
         
         height = height < 300 ? 300:height
         
+        //print(height)
+        
         return height
     }
 
