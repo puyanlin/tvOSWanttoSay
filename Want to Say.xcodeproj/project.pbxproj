@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D0292861C06167400CA0CC7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0292851C06167400CA0CC7 /* TableViewController.swift */; };
+		3D0292861C06167400CA0CC7 /* CardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0292851C06167400CA0CC7 /* CardTableViewController.swift */; };
+		3D4C66341C10895A005A03A5 /* CardContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4C66321C10895A005A03A5 /* CardContentCell.swift */; };
+		3D4C66351C10895A005A03A5 /* CardContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4C66331C10895A005A03A5 /* CardContentCell.xib */; };
+		3D4C66371C108CC1005A03A5 /* CardContentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4C66361C108CC1005A03A5 /* CardContentTableViewController.swift */; };
 		3D57E1701C07182A00142C80 /* hbd.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3D57E16F1C0716A400142C80 /* hbd.m4a */; };
 		3D9405071C05FD1A00A9F991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9405061C05FD1A00A9F991 /* AppDelegate.swift */; };
-		3D9405091C05FD1A00A9F991 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9405081C05FD1A00A9F991 /* ViewController.swift */; };
+		3D9405091C05FD1A00A9F991 /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9405081C05FD1A00A9F991 /* SongViewController.swift */; };
 		3D94050C1C05FD1A00A9F991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D94050A1C05FD1A00A9F991 /* Main.storyboard */; };
 		3D94050E1C05FD1A00A9F991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D94050D1C05FD1A00A9F991 /* Assets.xcassets */; };
 		3D9405191C05FD1A00A9F991 /* Want_to_SayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9405181C05FD1A00A9F991 /* Want_to_SayTests.swift */; };
@@ -35,11 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3D0292851C06167400CA0CC7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = "../../../../puyan/Desktop/tvOSWanttoSay/Want to Say/TableViewController.swift"; sourceTree = "<group>"; };
+		3D0292851C06167400CA0CC7 /* CardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewController.swift; sourceTree = "<group>"; };
+		3D4C66321C10895A005A03A5 /* CardContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardContentCell.swift; sourceTree = "<group>"; };
+		3D4C66331C10895A005A03A5 /* CardContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardContentCell.xib; sourceTree = "<group>"; };
+		3D4C66361C108CC1005A03A5 /* CardContentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardContentTableViewController.swift; sourceTree = "<group>"; };
 		3D57E16F1C0716A400142C80 /* hbd.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = hbd.m4a; sourceTree = "<group>"; };
 		3D9405031C05FD1A00A9F991 /* Want to Say.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Want to Say.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9405061C05FD1A00A9F991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D9405081C05FD1A00A9F991 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D9405081C05FD1A00A9F991 /* SongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
 		3D94050B1C05FD1A00A9F991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D94050D1C05FD1A00A9F991 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D94050F1C05FD1A00A9F991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,12 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				3D9405061C05FD1A00A9F991 /* AppDelegate.swift */,
-				3D9405081C05FD1A00A9F991 /* ViewController.swift */,
-				3D0292851C06167400CA0CC7 /* TableViewController.swift */,
+				3D9405081C05FD1A00A9F991 /* SongViewController.swift */,
+				3D0292851C06167400CA0CC7 /* CardTableViewController.swift */,
 				3D94050A1C05FD1A00A9F991 /* Main.storyboard */,
 				3D94050D1C05FD1A00A9F991 /* Assets.xcassets */,
 				3D57E16F1C0716A400142C80 /* hbd.m4a */,
 				3D94050F1C05FD1A00A9F991 /* Info.plist */,
+				3D4C66321C10895A005A03A5 /* CardContentCell.swift */,
+				3D4C66331C10895A005A03A5 /* CardContentCell.xib */,
+				3D4C66361C108CC1005A03A5 /* CardContentTableViewController.swift */,
 			);
 			path = "Want to Say";
 			sourceTree = "<group>";
@@ -234,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D57E1701C07182A00142C80 /* hbd.m4a in Resources */,
+				3D4C66351C10895A005A03A5 /* CardContentCell.xib in Resources */,
 				3D94050E1C05FD1A00A9F991 /* Assets.xcassets in Resources */,
 				3D94050C1C05FD1A00A9F991 /* Main.storyboard in Resources */,
 			);
@@ -260,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9405091C05FD1A00A9F991 /* ViewController.swift in Sources */,
-				3D0292861C06167400CA0CC7 /* TableViewController.swift in Sources */,
+				3D9405091C05FD1A00A9F991 /* SongViewController.swift in Sources */,
+				3D4C66341C10895A005A03A5 /* CardContentCell.swift in Sources */,
+				3D0292861C06167400CA0CC7 /* CardTableViewController.swift in Sources */,
+				3D4C66371C108CC1005A03A5 /* CardContentTableViewController.swift in Sources */,
 				3D9405071C05FD1A00A9F991 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class SongViewController: UIViewController {
 
     @IBOutlet var imgTitle: UIImageView!
     @IBOutlet var btnMore: UIButton!
