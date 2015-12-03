@@ -32,8 +32,4 @@ Pods/
 
 Carthage/Build
 
-*.xcuserstate
-
-*.xcuserstate
-
-*.xcuserstate
+xcuserstate
